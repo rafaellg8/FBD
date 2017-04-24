@@ -58,3 +58,47 @@ Mostramos todas las tablas:
 
 ` select * from user_tables; `
 
+### Modifica el esquema de la tabla plantilla añadiendo un nuevo atributo llamado
+fechabaja de tipo date.
+alter table plantilla add fechabaja date;
+
+==
+
+Tabla proveedor, para ejecutar el archivo, guardamos el archivo como proveedor.sql, y ejecutamos @proveedor. Ojo el archivo debe estar en el mismo directorio de ejecución.
+Hacemos lo mismo con la tabla proyecto, piezas y ventas.
+
+### Comprobar que se ha cambiado correctamente el esquema de la tabla Ventas.
+La descripción de la tabla debe contener los siguientes campos:
+
+Añadimos el campo fecha:
+
+`
+alter table ventas add fecha date;
+`
+
+`
+Nombre   Nulo     Tipo      
+-------- -------- --------- 
+CODPRO   NOT NULL CHAR(3)   
+CODPIE   NOT NULL CHAR(3)   
+CODPJ    NOT NULL CHAR(3)   
+CANTIDAD          NUMBER(4) 
+FECHA             DATE   
+`
+
+==
+
+## INSERT
+
+`
+INSERT INTO prueba2 VALUES (’aa’,1);
+INSERT INTO prueba2 VALUES(’Aa’,2);
+INSERT INTO prueba2 VALUES (’aa’,1);
+`
+
+`INSERT INTO plantilla (dni,nombre,estadocivil,fechaalta)
+VALUES ('12345678','Pepe','soltero', SYSDATE);
+INSERT INTO plantilla (dni,nombre,estadocivil,fechaalta)
+VALUES ('87654321','Juan', 'casado', SYSDATE);
+INSERT INTO serjefe VALUES ('87654321','12345678');
+INSERT INTO plantilla (dni, estadocivil) VALUES ('11223344','soltero');`
