@@ -47,3 +47,14 @@ cad char(3),
 n int,
 x float);
 `
+
+###Deduce el diagrama E/R que recoge la semántica de las tablas plantilla y
+serjefe.
+
+###Borrar la tabla prueba1 y comprobar las tablas que quedan.
+`drop table prueba1;`
+
+Mostramos todas las tablas:
+
+` select * from user_tables; `
+
