@@ -1,4 +1,4 @@
-#Practica 1
+# Practica 1
 
 Alteramos el usuario para cambiar la contraseña. Hacemos commit y generamos el fichero de salida.
 
@@ -24,7 +24,7 @@ CHECK (estadocivil IN ('soltero', 'casado', 'divorciado', 'viudo')),
 fechaalta date,
 PRIMARY KEY (dni));`
 
-###Buscar la lista completa de los tipos de datos que ofrece Oracler (Data types).
+### Buscar la lista completa de los tipos de datos que ofrece Oracler (Data types).
 Para ello debe consultarse el apartado correspondiente del manual de referencia de SQL de
 Oracler [8].
 Tipos de datos:
@@ -48,10 +48,10 @@ n int,
 x float);
 `
 
-###Deduce el diagrama E/R que recoge la semántica de las tablas plantilla y
+### Deduce el diagrama E/R que recoge la semántica de las tablas plantilla y
 serjefe.
 
-###Borrar la tabla prueba1 y comprobar las tablas que quedan.
+### Borrar la tabla prueba1 y comprobar las tablas que quedan.
 `drop table prueba1;`
 
 Mostramos todas las tablas:
