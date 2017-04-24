@@ -102,3 +102,19 @@ INSERT INTO plantilla (dni,nombre,estadocivil,fechaalta)
 VALUES ('87654321','Juan', 'casado', SYSDATE);
 INSERT INTO serjefe VALUES ('87654321','12345678');
 INSERT INTO plantilla (dni, estadocivil) VALUES ('11223344','soltero');`
+
+== 
+## SELECT
+
+### Ejecuta la sentencia SELECT para mostrar el contenido de las tablas PRUEBA2
+y PLANTILLA. Intenta mostrar sólo algunos campos de las mismas.
+
+`select dni from plantilla;
+
+select cad1 from prueba2;`
+
+### Ejecuta la sentencia UPDATE sobre la tabla plantilla y cambia el nombre del
+trabajador con dni ’12345678’ a ’Luis’.
+`update plantilla
+set nombre = 'Luis'
+where dni='12345678';`
